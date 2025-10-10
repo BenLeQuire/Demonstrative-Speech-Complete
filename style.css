@@ -1,0 +1,14 @@
+#title {
+    text-align: center;
+    font-size: 12vh;
+    font-family: cursive;
+}
+#submit-button {
+    height: 5vh;
+    width: 15vw;
+    align-self: center;
+}
+#form{
+    display: flex;
+    justify-content: center;
+}
