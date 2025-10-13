@@ -1,21 +1,49 @@
 #title {
     text-align: center;
-    font-size: 10vh;
+    font-size: 10vmin;
     font-family: cursive;
     margin:3vh 0;
-    /*margin: top right bottom left;*/
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    margin-bottom: 5vh;
+}
+#form-group{
+    display: flex;
+    width: 75vw;
+}
+.form-label{
+    font-size: 2vmin;
 }
 #submit-button {
     height: 5vh;
     width: 15vw;
     align-self: center;
+    font-size: 2.2vmin;
 }
-#form{
+#submit-button:active {
+    opacity: 0.7;
+}
+.output-div{
     display: flex;
+    align-self: center;
+    width: 75%;
+    margin: 3vh auto 3vh auto;
+    /*margin: top right bottom left;*/
+    background: #0096FF;
+    border-radius: 15px;
     justify-content: center;
+    align-items: center;
+    /*justify-content does horizontal, align-items does vertical*/
 }
-#form-group{
-    display: flex;
-    width: 75vw;
-
+.output-div:hover{
+    background: #00FFFF;
+}
+.output-text{
+    font-size: 3vmin;
+    font-family: "Comic Sans MS", cursive;
 }
