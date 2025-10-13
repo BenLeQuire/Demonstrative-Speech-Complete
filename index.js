@@ -35,7 +35,7 @@ function submit () {
                 output="nuh-uh"
                 break;
             case 4:
-                output="idfk"
+                output="idk"
         }
         alert(output);
     }
