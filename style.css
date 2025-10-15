@@ -31,7 +31,7 @@
 .output-div{
     display: flex;
     align-self: center;
-    width: 75%;
+    width: 50%;
     margin: 3vh auto 3vh auto;
     /*margin: top right bottom left;*/
     background: #0096FF;

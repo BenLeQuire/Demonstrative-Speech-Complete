@@ -39,8 +39,8 @@ function submit () {
         }
         //alert(output);
         let outputDiv = document.createElement("div");
-        outputDiv.className = "output-div"
-        outputDiv.innerHTML += "<p class='output-text'> Hello " + name + ", the answer to your question is: " + output + "</p>"
+        outputDiv.className = "output-div";
+        outputDiv.innerHTML += "<p class='output-text'> Hello " + name + ", the answer to your question is: " + output + "</p>";
         document.body.appendChild(outputDiv);
 
     }
