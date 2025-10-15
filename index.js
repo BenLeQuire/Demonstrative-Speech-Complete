@@ -1,4 +1,4 @@
-const button =document.getElementById("submit-button");
+const button = document.getElementById("submit-button");
 
 function submit () {
     let cont = false
