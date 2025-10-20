@@ -1,5 +1,4 @@
 const button = document.getElementById("submit-button");
-
 function submit () {
     let cont = false
     let name = document.getElementById("name").value;
