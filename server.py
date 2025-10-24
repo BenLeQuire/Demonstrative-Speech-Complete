@@ -11,5 +11,5 @@ def index():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run(server_context = 'adhoc')
+    app.run(host='0.0.0.0', port=8080)
     #serve(app, host='0.0.0.0', port=8000, threads = 8)
