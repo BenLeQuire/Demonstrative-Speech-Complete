@@ -42,6 +42,20 @@ function submit () {
         outputDiv.innerHTML += "<p class='output-text'> Hello " + name + ", the answer to your question is: " + output + "</p>";
         document.body.appendChild(outputDiv);
 
+        //call Flask app
+        fetch('/callApp', {
+            method:'POST',
+            headers: {
+                'Content-Type':'application/json'
+            },
+            body: JSON.stringify({
+                output:output,
+            })
+        })
+        .then(response => response.text())
+        .then(data => {
+            console.log(data)
+        })
     }
 
     //console.log("y");
