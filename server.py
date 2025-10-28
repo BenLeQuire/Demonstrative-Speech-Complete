@@ -3,8 +3,10 @@ import json
 from dotenv import load_dotenv
 import os
 from flask_pymongo import PyMongo
+load_dotenv()
 
 db_url = os.getenv("DB_URL")
+#print(db_url)
 
 app = Flask(__name__)
 app.config['MONGO_URI'] = db_url
@@ -16,12 +18,12 @@ def index():
 @app.route('/callApp', methods=['POST'])
 def callApp():
     answer_data = request.get_json()
-    output = answer_data.get('output', 'no output found')
-    db_entry = mongo.output.output.insert_1(output)
+    print(answer_data)
+    db_entry = mongo.db.output.insert_one(answer_data)
 
-    return db_entry
+    return {'inserted_id': str(db_entry.inserted_id)}
 
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0')
